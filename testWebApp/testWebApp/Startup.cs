@@ -34,6 +34,10 @@ namespace testWebApp
                 {
                     await context.Response.WriteAsync("I have no idea whats happening but i can see this line!");
                 });
+                endpoints.MapGet("/game", async context =>
+                {
+                    await context.Response.WriteAsync("<h1>911 Send sleep</h1>");
+                });
             });
         }
     }
